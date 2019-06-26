@@ -19,6 +19,7 @@ import LoggerAPI
 import Foundation
 
 // Class for ECDSA signing using BlueECC
+@available(iOS 10.0, *)
 @available(OSX 10.13, *)
 class BlueECSigner: SignerAlgorithm {
     let name: String = "ECDSA"
@@ -58,7 +59,7 @@ class BlueECSigner: SignerAlgorithm {
 }
 
 // Class for ECDSA verifying using BlueECC
-@available(OSX 10.13, *)
+@available(OSX 10.13, iOS 10.310.3, *)
 class BlueECVerifier: VerifierAlgorithm {
     
     let name: String = "ECDSA"
